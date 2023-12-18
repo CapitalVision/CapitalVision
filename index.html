@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web Avanzado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 id="logo">Mi Sitio Web Avanzado</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Carrusel de Imágenes -->
+    <section id="carrusel">
+        <div class="container">
+            <!-- Aquí irían las imágenes y controles del carrusel -->
+            <h2>Carrusel de Imágenes</h2>
+            <p>Descripción o texto sobre el carrusel.</p>
+            <div class="carrusel-container">
+                <div class="carrusel-slide" style="background-image: url('imagenes/2020-porsche-taycan.jpg');"></div>
+                <div class="carrusel-slide" style="background-image: url('imagenes/audi\ rs7.jpg');"></div>
+                <div class="carrusel-slide" style="background-image: url('imagenes/ferrari-f8-tributo-02-1568015707.jpg');"></div>
+                <div class="carrusel-slide" style="background-image: url('imagenes/jesko.jpg');"></div>
+                <div class="carrusel-slide" style="background-image: url('imagenes/mercedes\ AMG.avif');"></div>
+                <div class="carrusel-slide" style="background-image: url('imagenes/RIMAC-BLOG-PREMIUM-EVENTOSMOTOR-6.jpg');"></div>
+                <!-- Agrega más slides si es necesario -->
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="servicio">
+                <h3>Servicio 1</h3>
+                <p>Descripción del servicio 1.</p>
+            </div>
+            <div class="servicio">
+                <h3>Servicio 2</h3>
+                <p>Descripción del servicio 2.</p>
+            </div>
+            <!-- Más servicios aquí -->
+        </div>
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="sobre-nosotros">
+        <div class="container">
+            <h2>Sobre Nosotros</h2>
+            <p>Información detallada sobre la empresa o el sitio web.</p>
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section id="testimonios">
+        <div class="container">
+            <h2>Testimonios</h2>
+            <div class="testimonio">
+                <p>“Comentario de un cliente o usuario.”</p>
+                <p>- Nombre del Cliente</p>
+            </div>
+            <!-- Más testimonios aquí -->
+        </div>
+    </section>
+
+    <!-- Sección FAQ -->
+    <section id="faq">
+        <div class="container">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-item">
+                <h3>¿Pregunta 1?</h3>
+                <p>Respuesta a la pregunta 1.</p>
+            </div>
+            <!-- Más preguntas aquí -->
+        </div>
+    </section>
+
+    <!-- Sección de Blog -->
+    <section id="blog">
+        <div class="container">
+            <h2>Blog</h2>
+            <article>
+                <h3>Título del Artículo 1</h3>
+                <p>Contenido del artículo 1...</p>
+                <a href="#">Leer Más</a>
+            </article>
+            <!-- Más artículos aquí -->
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Formulario de contacto o información de contacto aquí.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Mi Sitio Web Avanzado. Todos los derechos reservados.</p>
+            <ul>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Términos de Uso</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carrusel-slide');
+    const totalSlides = slides.length;
+
+    function updateSlides() {
+        slides.forEach((slide, index) => {
+            if (index === currentSlide) {
+                slide.style.opacity = 1;
+            } else {
+                slide.style.opacity = 0;
+            }
+        });
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        updateSlides();
+    }
+
+    setInterval(nextSlide, 3000); // Cambia la imagen cada 3 segundos
+</script>
+
+</html>

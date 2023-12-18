@@ -1,0 +1,371 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #35424a;
+    color: rgb(0, 0, 0);
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#logo {
+    float: left;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #e8491d;
+}
+
+#showcase {
+    min-height: 400px;
+    background: url('showcase.jpg') no-repeat 0 -400px;
+    text-align: center;
+    color: #fff;
+    padding-top: 100px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#showcase h2 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+main {
+    float: left;
+    width: 70%;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    background: #e8491d;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+aside .box {
+    padding: 20px;
+}
+
+aside .box h3 {
+    font-size: 1.4em;
+}
+
+#articles article {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+footer {
+    background: #35424a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.8em;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 5px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    header #logo,
+    header nav,
+    main,
+    aside,
+    .container {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header nav ul {
+        padding-top: 20px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-top: 5px;
+    }
+
+}    
+   
+#carrusel {
+    padding: 20px 0;
+    background-color: #ddd;
+    text-align: center;
+}
+
+/* Sección de Servicios */
+#servicios {
+    padding: 40px 0;
+    background-color: #f4f4f4;
+}
+
+.servicio {
+    margin-bottom: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Sección Sobre Nosotros */
+#sobre-nosotros {
+    padding: 40px 0;
+    background-color: #eaeaea;
+}
+
+/* Sección de Testimonios */
+#testimonios {
+    padding: 40px 0;
+    background-color: #f4f4f4;
+}
+
+.testimonio {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    font-style: italic;
+}
+
+/* Sección FAQ */
+#faq {
+    padding: 40px 0;
+    background-color: #eaeaea;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+/* Sección de Blog */
+#blog {
+    padding: 40px 0;
+    background-color: #f4f4f4;
+}
+
+/* Sección de Contacto */
+#contacto {
+    padding: 40px 0;
+    background-color: #eaeaea;
+    text-align: center;
+}
+
+/* Pie de Página */
+footer {
+    background: #35424a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.8em;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 5px;
+}
+
+footer ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    header #logo,
+    header nav,
+    main,
+    aside,
+    .container {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header nav ul {
+        padding-top: 20px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-top: 5px;
+    }
+}
+
+.carrusel-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.carrusel-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.carrusel-slide:first-child {
+    opacity: 1;
+}
+
+.container {
+    width: 90%; /* Más espacio en los lados */
+    max-width: 1200px; /* Ancho máximo para que no se vea demasiado amplio en pantallas grandes */
+    margin: auto;
+    padding: 2rem;
+}
+
+/* Mejora en la tipografía */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 18px; /* Tamaño de fuente más grande para una mejor legibilidad */
+    color: #333;
+    background-color: #f8f8f8; /* Un fondo más claro */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300; /* Menos negrita para un look más moderno */
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    color: #ffffff; /* Un color más oscuro para los títulos para mejor contraste */
+}
+
+/* Carrusel con mejor resolución de imágenes */
+.carrusel-slide {
+    /* ... */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Botones y enlaces interactivos */
+a {
+    color: #e8491d;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Tarjetas de contenido con sombras */
+.servicio, .testimonio {
+    /* ... */
+    border: 1px solid #ddd; /* Borde sutil */
+    background-color: #fff; /* Fondo blanco para las tarjetas */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #000000; /* Texto claro para el fondo oscuro */
+    background-color: #1a1a1a; /* Fondo oscuro */
+    padding: 20px;
+}
+
+/* Contenedor general */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 20px;
+}
+
+/* Cabecera */
+header {
+    background: #333;
+    color: #f4f4f4;
+    padding: 1rem 0
+}    
